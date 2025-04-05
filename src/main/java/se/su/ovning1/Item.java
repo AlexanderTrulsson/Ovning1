@@ -1,12 +1,10 @@
 package se.su.ovning1;
 
-import java.awt.print.Printable;
+public abstract class Item implements Priceable {
 
-public abstract class Item implements Printable {
+    private final String name;
 
-    protected String name;
-
-    public Item(String name) {
+    protected Item(String name) {
         this.name = name;
     }
 
